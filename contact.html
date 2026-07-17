@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact the SINGER Fabrics sales team for product availability, pricing and wholesale ordering information.">
+  <title>Contact Sales | SINGER Fabrics</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="index.html"><img src="assets/images/singer_175_logo.png" alt="SINGER 175 Years anniversary logo"></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-label="Open navigation">☰</button>
+      <div class="nav-links"><a href="index.html">Home</a><a href="catalog.html">Catalog</a><a href="contact.html" aria-current="page">Contact</a></div>
+      <a class="nav-cta" href="contact.html">Contact Sales</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero"><div class="container"><div class="eyebrow">Wholesale And Business Inquiries</div><h1>Let’s Connect.</h1><p>Tell us what you are looking for. Our sales team will review your inquiry and follow up with collection information, availability, pricing and applicable order requirements.</p></div></section>
+    <section class="section">
+      <div class="container contact-wrap">
+        <aside class="contact-panel">
+          <div class="eyebrow">SINGER Fabrics Sales</div>
+          <h2 class="contact-title">Your Next Collection Starts Here.</h2>
+          <p>Use the form for wholesale inquiries, catalog follow up, product availability, pricing, samples and ordering support.</p>
+          <div class="contact-details">
+            <p><strong>Email</strong><br><a href="mailto:sales@singerfabrics.com">sales@singerfabrics.com</a></p>
+            <p><strong>Event</strong><br>Global Sewing Summit</p>
+            <p><strong>Location</strong><br>Nashville, Tennessee</p>
+          </div>
+        </aside>
+
+        <div class="form-card">
+          <!-- Submissions are delivered by EmailJS from sales@singerfabrics.com. Configure the EMAIL_CONFIG keys in script.js as described in the README. -->
+          <form id="salesForm" method="POST">
+            <input type="hidden" name="source" value="Global Sewing Summit Website">
+            <div class="form-grid">
+              <div class="field"><label for="name">Full Name</label><input id="name" name="name" autocomplete="name" required></div>
+              <div class="field"><label for="company">Company Name</label><input id="company" name="company" autocomplete="organization" required></div>
+              <div class="field"><label for="email">Business Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+              <div class="field"><label for="phone">Phone Number</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+              <div class="field"><label for="businessType">Business Type</label><select id="businessType" name="business_type" required><option value="">Select one</option><option>Quilt Shop</option><option>Fabric Store</option><option>Distributor</option><option>Ecommerce Retailer</option><option>Designer</option><option>Manufacturer</option><option>Other</option></select></div>
+              <div class="field"><label for="volume">Estimated Order Volume</label><select id="volume" name="estimated_order_volume"><option value="">Select one</option><option>Sample or evaluation</option><option>Opening order</option><option>Recurring wholesale program</option><option>Distribution opportunity</option><option>Not yet determined</option></select></div>
+              <div class="field full"><label>Products Of Interest</label><div class="checkbox-grid"><label class="checkbox"><input type="checkbox" name="products" value="Solids Collection">Solids Collection</label><label class="checkbox"><input type="checkbox" name="products" value="SINGER Batik">SINGER Batik</label><label class="checkbox"><input type="checkbox" name="products" value="Everyday Collection">Everyday Collection</label><label class="checkbox"><input type="checkbox" name="products" value="Seasonal Collection">Seasonal Collection</label></div></div>
+              <div class="field full"><label for="interestSummary">Collection Or SKU Interest</label><input id="interestSummary" name="collection_or_sku" placeholder="Example: Solids Collection, SFBTR019 or Patriotic prints"></div>
+              <div class="field full"><label for="message">How Can We Help?</label><textarea id="message" name="message" placeholder="Tell us about your business, desired products, timing or questions." required></textarea></div>
+              <div class="field full"><label class="checkbox"><input type="checkbox" name="permission" value="Yes" required>I agree to be contacted regarding this business inquiry.</label></div>
+              <div class="field full"><button class="button" type="submit">Connect With Our Sales Team</button><p class="form-note">Your information will be used only to respond to this inquiry and related business follow up.</p><div class="status" id="formStatus" aria-live="polite"></div></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="footer-grid"><div><img class="footer-logo" src="assets/images/singer_175_logo.png" alt="SINGER 175 Years anniversary logo"><p>Premium fabrics for quilting, sewing and original creative work.</p></div><div><strong>Explore</strong><div class="footer-links"><a href="index.html">Home</a><a href="catalog.html">Catalog</a><a href="contact.html">Contact</a></div></div><div><strong>Sales</strong><div class="footer-links"><a href="mailto:sales@singerfabrics.com">sales@singerfabrics.com</a><span>Global Sewing Summit</span><span>Nashville, Tennessee</span></div></div></div><div class="legal">SINGER® is a trademark of Singer Sourcing Limited LLC. © 2026 Singer Sourcing Limited LLC. All rights reserved.</div></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
